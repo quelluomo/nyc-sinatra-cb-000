@@ -34,5 +34,4 @@ class LandmarksController < ApplicationController
     redirect("/landmarks/#{@landmark.id}")
   end
 
-
 end
