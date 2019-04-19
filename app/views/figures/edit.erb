@@ -7,7 +7,7 @@
 
    <h3><label>landmarks</label></h3>
    <% Landmark.all.each do |landmark| %>
-     <input id="landmark_<%=landmark.id%>" type="checkbox" name="figure[landmark_ids][]" value="<%= landmark.id %>" <%='checked' if @figure.titles.include?(title) %> <%= landmark.name %></input><br>
+     <input id="landmark_<%=landmark.id%>" type="checkbox" name="figure[landmark_ids][]" value="<%= landmark.id %>" <%='checked' if @figure.landmarks.include?(landmark) %> <%= landmark.name %></input><br>
    <% end %>
 
    <h3><label>Create New Landmark</label></h3>
