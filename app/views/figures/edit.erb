@@ -20,7 +20,7 @@
   <h3><label>Edit Titles</label></h3><br>
   <% Title.all.each do |title| %>
      <h3><label><%= title.name %></label></h3>
-     <input type="checkbox" name="figure[title_ids][]" value="<%= title.id %>" id="<%= title.name %>" <%='checked' if @figure.titles.include?(title) %>>
+     <li><input type="checkbox" name="figure[title_ids][]" value="<%= title.id %>" id="<%= title.name %>" <%='checked' if @figure.titles.include?(title) %>></li>
    <% end %></br>
   <h3><label>Add New Title:</label></h3>
   <input type="text" id="new_title" name="title[name]"><br></br>
